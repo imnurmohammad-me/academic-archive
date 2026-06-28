@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Restart-Docs</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="documentation">
+    <meta name="author" content="misoftwares">    
+    <link rel="shortcut icon" href="assets/images/logo-mini.png"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"> -->
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/other.css">
+
+	   <!-- Bootstrap CSS -->
+	   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+	   <!-- highlight.js CSS -->
+	   <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/logo.png" width="200" class="img-fluid" alt="logo"></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center me-4">
+		            <a href="#" class="btn btn-theme d-flex d-lg-flex">Buy</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link active" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Installation</a></li>
+				    <li class="nav-item"><a class="nav-link" href="index.html">Server-Installation</a></li>
+				    <li class="nav-item"><a class="nav-link" href="backend-config.html">Admin Panel Configuration</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-android.html">Flutter-Android Setup</a></li>
+				    <li class="nav-item"><a class="nav-link active" href="flutter-ios.html">Flutter-IOS Setup</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-translate.html">Flutter-Translation Setup</a></li>
+				    <li class="nav-item"><a class="nav-link" href="payment-gateway.html">Payment Gateway</a></li>
+				    <li class="nav-item"><a class="nav-link" href="sms-gateway.html">SMS Gateway</a></li>	
+				    <li class="nav-item"><a class="nav-link" href="admin-app.html">Admin App</a></li>
+                    <li class="nav-item"><a class="nav-link" href="web-booking.html">Web Booking Setup</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>User Manual</a></li>
+				    <li class="nav-item"><a class="nav-link" href="admin-app-setup.html">Required Admin-App Setup</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Update</a></li>
+				    <li class="nav-item"><a class="nav-link" href="admin-app-update.html">Admin-App</a></li>
+				    <li class="nav-item"><a class="nav-link" href="mobile-app-update.html">Mobile App</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-bug"></i></span>Common Issues</a></li>
+				    <li class="nav-item"><a class="nav-link" href="server-app-issue.html">Server-App Issues</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-app-issue.html">Flutter-App Issues</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+				<div class="row">
+                    <div class="col-md-6 col-lg-9">		
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Flutter IOS Setup</h1>
+<!-- introduction  -->
+					    <section class="docs-section" id="docs-intro">
+							<h2 class="section-heading"><span class="text-theme me-2">1.</span>Introduction</h2>
+						    <p>In this article, we are going to set up the Restart App’s initial setup for real-time use cases.</p>
+						</section>	
+<!-- setup instruction -->
+							<section class="docs-section" id="setup-instruct">
+							<h3 class="section-title"><span class="text-theme me-2">2.</span>Setup Instructions</h3>
+							<ul>
+								<li class="fw-bold"><strong class="me-1">Note: Before ios setup, please complete all the server & firebase & code changes, map setup which is mentioned in android setup & server setup sections.</strong></li>
+								<li class="fw-bold"><strong class="me-1">flutter version for this project is 'Channel stable, 3.27.3'</strong> </li>
+
+								<ul>
+									<li>change some details in given files,</li>
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy1"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy1" class="php">
+&lt;strong&gt;Note:&lt;/strong&gt; File Location: "project/ios/Runner/Runner.xcodeproj/project.pbxproj"
+</code></pre>
+</div>
+</div>
+<br>
+								</ul>
+
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy2"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy2" class="php">
+PRODUCT_BUNDLE_IDENTIFIER = 'your bundle id here';  (change in 6 places in same file)
+DEVELOPMENT_TEAM = 'team id'; (change your apple team id here 3 places)
+INFOPLIST_KEY_CFBundleDisplayName = 'product name'; (change your app name here 3 places)
+</code></pre>
+</div>
+</div>
+<br>
+
+								<li class="fw-bold"><strong>Note : File Location : "project/ios/Runner/info.plist"</strong></li>
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy3"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy3" class="php">
+&lt;key&gt; CFBundleDisplayName &lt;/key&gt;
+
+&lt;string&gt;project name here &lt;/string&gt;
+</code></pre>
+</div>
+</div>
+<br>
+
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy4"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy4" class="php">
+&lt;array&gt;
+&lt;string&gt;Encoded app id from firebasse &lt;/string&gt;
+&lt;/array&gt;
+
+</code></pre>
+</div>
+</div>
+<br>
+
+								<li>Replace<strong class="me-1 fw-bold">"Encoded app id from firebasse" </strong>with the encoded app id of Firebase project</li>								
+								<div class="simplelightbox-gallery row mb-3">
+									<div class="col-12 col-md-12 mb-3">
+										<a href="assets/images/encodedappid.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/encodedappid.png" alt="" /></a>
+									</div>
+								</div>
+								<li>Open your project File with the Xcode IDE which is used to create the project and also it is very powerful.
+									project file is in location,
+								</li>
+								<li class="fw-bold"><strong>Note : File Location : "project/ios/runner.xcworkspace"</strong> </li>
+								</ul>
+								<p>change map api key in file,  <span class="fw-bold"><strong>Note : File Location : project/ios/Runner/appDelegate.swift</strong></span></p>
+
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy5"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy5" class="php">
+GMSServices.provideAPIKey("your map key here")
+</code></pre>
+</div>
+</div>
+<br>
+						</section> <br>					
+<!-- major things to do-->
+						<section class="docs-section" id="major-things-to-do">
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">3.</span>Major things to Do: </h3><br>
+							<ol>
+								
+								<li>Rename the project with your app name and bundle identifier <br/>
+									<strong class="fw-bold">in Xcode / Runner / General /</strong></li>								
+								<div class="simplelightbox-gallery row mb-3">
+									<div class="col-12 col-md-12 mb-3">
+										<a href="assets/images/rename-project.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/rename-project.png" alt="" /></a>
+									</div>
+								</div>
+								<li>Create a bundle identifier for your app in developer account.</li>
+								<li>create development and distribution certificates.kindly refer this url for reference -
+									<a href="https://medium.com/mobile-devops-ci-cd-ct/steps-to-create-ios-developer-and-distribution-certificates-with-and-without-a-mac-8449b973ef9d" target="_blank" class="text-decoration-none">
+										https://medium.com/mobile-devops-ci-cd-ct/steps-to-create-ios-developer-and-distribution-certificates-with-and-without-a-mac-8449b973ef9d
+									</a>
+								</li>
+								<li>Create provisioning profiles for both development and distribution. kindly refer this url for reference -
+									<a href="https://clearbridgemobile.com/how-to-create-a-distribution-provisioning-profile-for-ios/" target="_blank" class="text-decoration-none">
+										https://clearbridgemobile.com/how-to-create-a-distribution-provisioning-profile-for-ios/
+									</a>
+								</li>
+								<li>Create APNS auth key for push notification.</li>
+								<li>Register your bundle identifier in firebase project that you changed in xcode.</li>
+								<li>Firebase -: setup phone number authentication, cloud messaging and firebase database.</li>
+								<li>Download the googleservicePlist json from firebase.</li>
+								<li>Now open the project.</li>
+								<li>add googleservice-Info.plist in project/ios/Runner/ or from xcode right click Runner and click Add files to runner and choose googleserviceInfo.plist file as shown in image.</li>								
+								<div class="simplelightbox-gallery row mb-3">
+									<div class="col-12 col-md-12 mb-3">
+										<a href="assets/images/replace-google-services.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/replace-google-services.png" alt="" /></a>
+									</div>
+								</div>
+								<li>after open the google-services.json file, and find out the "API_KEY","GOOGLE_APP_ID","PROJECT_ID","GCM_SENDER_ID"</li>
+								<li>replace these key values in "project/lib/common/app_constant.dart" file</li>
+								<li>(GCM_SENDER_ID as firebasemessagingSenderId, GOOGLE_APP_ID as firebaseAppId)</li>								
+								<li>copy the google app id from googleserviceplist.json and paste it in url scheme in Xcode / Runner / Info / url types as shown in image</li>								
+								<div class="simplelightbox-gallery row mb-3">
+									<div class="col-12 col-md-12 mb-3">
+										<a href="assets/images/copy-google-info-id.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/copy-google-info-id.png" alt="" /></a>
+									</div>
+								</div>							
+								<div class="simplelightbox-gallery row mb-3">
+									<div class="col-12 col-md-12 mb-3">
+										<a href="assets/images/configure-google-info.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/configure-google-info.png" alt="" /></a>
+									</div>
+								</div>
+								<li>replace App Icon in assets in the folder in following size and names without alpha and transparent background
+									<strong class="fw-bold">project/ios/Runner/Assets.xcassets/AppIcon.appiconset/</strong>
+								</li>
+								<p> Icon-App-20x20@1x.png - (20x20) x1 size - 20x20</p>
+								<p>Icon-App-20x20@2x.png - (20x20) x2 size - 40x40</p>
+								<p> Icon-App-20x20@3x.png - (20x20) x3 size - 60x60</p>
+								<p>Icon-App-29x29@1x.png - (29x29) x1 size - 29x29</p>
+								<p>Icon-App-29x29@2x.png - (29x29) x2 size - 58x58</p>
+								<p>Icon-App-29x29@3x.png - (29x29) x3 size - 87x87</p>
+								<p>Icon-App-40x40@1x.png - (40x40) x1 size - 40x40</p>
+								<p>Icon-App-40x40@2x.png - (40x40) x2 size - 80x80</p>
+								<p>Icon-App-40x40@3x.png - (40x40) x3 size - 120x120</p>
+								<p>Icon-App-60x60@2x.png - (60x60) x2 size - 120x120</p>
+								<p>Icon-App-60x60@3x.png - (60x60) x3 size - 180x180</p>
+								<p>Icon-App-76x76@1x.png - (76x76) x1 size - 76x76</p>
+								<p>Icon-App-76x76@2x.png - (76x76) x2 size - 152x152</p>
+								<p>Icon-App-83.5x83.5@2x.png - (83.5x83.5) x2 size - 167x167</p>
+								<p>Icon-App-1024x1024@1x.png - (1024x1024) x1 size - 1024x1024</p>
+								<li>in go to folder 'project/ios' and run command 'flutter build ios --release -target lib/env/main_dev.dart'</li>
+								<li>to create archive file to upload run command 'flutter build ipa' from folder 'project/ios'.</li>
+								<p>you will find archive file in folder project/build/ios/archive/Runner.xcarchive</p>
+							</ol>
+							
+						</section> <br>	
+						
+
+					<div class="d-flex justify-content-between mt-4">
+						<a href="flutter-android.html" class="btn btn-secondary">&larr; Previous</a>
+						<a href="flutter-translate.html" class="btn btn-theme">Next &rarr;</a>
+					</div>
+			    </article>
+			</div>
+			<div class="col-lg-3">
+				<div class="docs-toc" id="small-nav">
+					<nav id="toc" class="toc">
+						<nav id="docs-nav" class="docs-nav navbar">
+							<ul class="section-items list-unstyled nav flex-column pb-3">
+								<li class="nav-item section-title mt-3"><a class="nav-link scrollto active" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Flutter IOS Setup</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#docs-intro">1.Introduction</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#setup-instruct">2.Setup Instructions</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#major-things-to-do">3.Major things to do</a></li>
+							</ul>
+					</nav>
+				</div>
+			</div>
+				
+		<div class="col-lg-9">
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			            <small class="copyright">Misoftwares</small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item">
+							  <a href="https://www.instagram.com/mi_softwares/" target="_blank" rel="noopener noreferrer">
+							    <i class="fab fa-instagram fa-fw"></i>
+							  </a>
+							</li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+			</div>
+		</div>	
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+
+ <!-- Optional: Custom CSS for dark theme -->
+<style>
+	.hljs {
+	background: #000000;
+	color: #ffffff;
+	}
+</style>
+	 <!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- highlight.js JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script> -->
+    <!-- <script src="assets/js/highlight-custom.js"></script>  -->
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+    <script src="assets/js/other.js"></script> 
+
+</body>
+</html> 
+

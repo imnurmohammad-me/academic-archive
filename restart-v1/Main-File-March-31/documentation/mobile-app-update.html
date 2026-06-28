@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Restart-Docs</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="documentation">
+    <meta name="author" content="misoftwares">    
+    <link rel="shortcut icon" href="assets/images/logo-mini.png"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"> -->
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/other.css">
+
+	   <!-- Bootstrap CSS -->
+	   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+	   <!-- highlight.js CSS -->
+	   <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/logo.png" width="200" class="img-fluid" alt="logo"></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center me-4">
+		            <a href="#" class="btn btn-theme d-flex d-lg-flex">Buy</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Installation</a></li>
+				    <li class="nav-item"><a class="nav-link" href="index.html">Server-Installation</a></li>
+				    <li class="nav-item"><a class="nav-link" href="backend-config.html">Admin Panel Configuration</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-android.html">Flutter-Android Setup</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-ios.html">Flutter-IOS Setup</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-translate.html">Flutter-Translation Setup</a></li>
+				    <li class="nav-item"><a class="nav-link" href="payment-gateway.html">Payment Gateway</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admin-app.html">Admin App</a></li>
+                    <li class="nav-item"><a class="nav-link" href="web-booking.html">Web Booking Setup</a></li>				    
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>User Manual</a></li>
+				    <li class="nav-item"><a class="nav-link" href="admin-app-setup.html">Required Admin-App Setup</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link active" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Update</a></li>
+				    <li class="nav-item"><a class="nav-link" href="admin-app-update.html">Admin-App</a></li>
+				    <li class="nav-item"><a class="nav-link active" href="mobile-app-update.html">Mobile App</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-bug"></i></span>Common Issues</a></li>
+				    <li class="nav-item"><a class="nav-link" href="server-app-issue.html">Server-App Issues</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-app-issue.html">Flutter-App Issues</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+				<div class="row">
+                    <div class="col-md-6 col-lg-9">		
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-title">Mobile app update from previous version</h1>
+<!-- Introduction  -->
+					    <section class="docs-section" id="intro">
+							<h3 class="section-title"><span class="text-theme me-2">1.</span>Introduction</h3>
+							<p>In this article, we are going to update the mobile app source code from the previous version.</p>
+							</section>
+
+<!-- Update Instructions -->
+							<section class="docs-section" id="update">
+							<h3 class="section-title"><span class="text-theme me-2">2.</span>Update Instructions</h3> <br>
+							<p><strong>Update the latest code with your current proejct after the customizations</strong></p>
+							<ul>
+								<li>First, push your code on a git branch. Then download our project code from codecanyon and push it to another branch. And at last marge both branch and it is possible to getting conflict on branch. Resolve it carefully. we won't be responsibe for if something went wrong.</li>
+								<li>Follow the sample video tutorial - <a href="https://youtu.be/mn9otng7Lho?si=9LNfpmTJ4cL6CL6N" target="_blank">https://youtu.be/mn9otng7Lho?si=9LNfpmTJ4cL6CL6N</a> </li>
+								<div class="container mt-5" style="max-width: 850px; margin: auto;">
+									<iframe style="aspect-ratio: 16/9;width: 100%;" src="https://www.youtube.com/embed/mn9otng7Lho?si=ykLZV1nHGxeAnfrj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								</div>
+							</ul>
+							</section>
+
+					<div class="d-flex justify-content-between mt-4">
+						<a href="admin-app-update.html" class="btn btn-secondary">&larr; Previous</a>
+						<a href="server-app-issue.html" class="btn btn-theme">Next &rarr;</a>
+					</div>
+			    </article>
+			</div>
+			<div class="col-lg-3">
+				<div class="docs-toc" id="small-nav">
+					<nav id="toc" class="toc">
+						<nav id="docs-nav" class="docs-nav navbar">
+							<ul class="section-items list-unstyled nav flex-column pb-3">
+								<li class="nav-item section-title mt-3"><a class="nav-link scrollto active" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Mobile App</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#intro">1.Introduction</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#update">2.Update Instructions</a></li>
+							</ul>
+					</nav>
+				</div>
+			</div>
+				
+		<div class="col-lg-9">
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			            <small class="copyright">Misoftwares</small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item">
+							  <a href="https://www.instagram.com/mi_softwares/" target="_blank" rel="noopener noreferrer">
+							    <i class="fab fa-instagram fa-fw"></i>
+							  </a>
+							</li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+			</div>
+		</div>	
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+
+ <!-- Optional: Custom CSS for dark theme -->
+<style>
+	.hljs {
+	background: #000000;
+	color: #ffffff;
+	}
+</style>
+	 <!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- highlight.js JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script> -->
+    <!-- <script src="assets/js/highlight-custom.js"></script>  -->
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+    <script src="assets/js/other.js"></script> 
+
+</body>
+</html> 
+

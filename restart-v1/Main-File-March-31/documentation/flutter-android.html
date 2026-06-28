@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Restart-Docs</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="documentation">
+    <meta name="author" content="misoftwares">    
+    <link rel="shortcut icon" href="assets/images/logo-mini.png"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"> -->
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/other.css">
+
+	   <!-- Bootstrap CSS -->
+	   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+	   <!-- highlight.js CSS -->
+	   <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/logo.png" width="200" class="img-fluid" alt="logo"></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center me-4">
+		            <a href="#" class="btn btn-theme d-flex d-lg-flex">Buy</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link active" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Installation</a></li>
+				    <li class="nav-item"><a class="nav-link" href="index.html">Server-Installation</a></li>
+				    <li class="nav-item"><a class="nav-link" href="backend-config.html">Admin Panel Configuration</a></li>
+				    <li class="nav-item"><a class="nav-link active" href="flutter-android.html">Flutter-Android Setup</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-ios.html">Flutter-IOS Setup</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-translate.html">Flutter-Translation Setup</a></li>
+				    <li class="nav-item"><a class="nav-link" href="payment-gateway.html">Payment Gateway</a></li>
+				     <li class="nav-item"><a class="nav-link" href="sms-gateway.html">SMS Gateway</a></li>  
+                    <li class="nav-item"><a class="nav-link" href="admin-app.html">Admin App</a></li>
+                    <li class="nav-item"><a class="nav-link" href="web-booking.html">Web Booking Setup</a></li>				     
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>User Manual</a></li>
+				    <li class="nav-item"><a class="nav-link" href="admin-app-setup.html">Required Admin-App Setup</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Update</a></li>
+				    <li class="nav-item"><a class="nav-link" href="admin-app-update.html">Admin-App</a></li>
+				    <li class="nav-item"><a class="nav-link" href="mobile-app-update.html">Mobile App</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-bug"></i></span>Common Issues</a></li>
+				    <li class="nav-item"><a class="nav-link" href="server-app-issue.html">Server-App Issues</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-app-issue.html">Flutter-App Issues</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+				<div class="row">
+                    <div class="col-md-6 col-lg-9">		
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Flutter Android Setup</h1>
+<!-- introduction  -->
+					    <section class="docs-section" id="docs-intro">
+							<h2 class="section-heading"><span class="text-theme me-2">1.</span>Introduction</h2>
+						    <p>In this article, we are going to set up the Restart App’s initial setup for real-time use cases.</p>
+						</section>	
+<!-- setup instruction -->
+							<section class="docs-section" id="setup-instruct">
+							<h3 class="section-title"><span class="text-theme me-2">2.</span>Setup Instructions</h3>							
+							<ul>
+								<li class="fw-bold"><strong class="me-1">Flutter SDK version for this project is 'Channel stable, 3.29.2'</strong></li>
+								<li class="fw-bold"><strong class="me-1">Dart SDK version for this project is '3.7.2'</strong></li>
+								<li class="fw-bold"><strong class="me-1">Android SDK version for this project is '35'</strong></li>
+								<li class="fw-bold"><strong class="me-1">Gradle version for this project is 'gradle-8.11.1-all.zip'</strong></li>
+								<li class="fw-bold"><strong class="me-1">Java version for this project is 'jdk-17'</strong></li>
+								<li class="fw-bold"><strong class="me-1">Android IDE tool version for this project is 'Meerkat 2024.3.1'</strong></li>
+								<li class="fw-bold"><strong class="me-1">Kotlin version for this project is '2.0.20'</strong></li>
+								<li class="fw-bold"><strong class="me-1">Open your project File the Visual Studio Code which is used to create the project and also it is very powerful.</strong> </li>
+								<li class="fw-bold"><strong class="me-1">and in terminal run command 'flutter pub get'</strong></li>
+								<li class="fw-bold"><strong class="me-1">project structure is given in image below</strong></li>								
+								<div class="simplelightbox-gallery row mb-3">
+									<div class="col-12 col-md-12 mb-3">
+										<a href="assets/images/project-folder-structure.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/project-folder-structure.png" alt="" /></a>
+									</div>
+								</div>
+							</ul> <br>
+						</section> <br>
+						<h3 class="section-title">Major Things to do:</h3>						
+<!-- change base url Setup-->
+						<section class="docs-section" id="change-base-url-setup">
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">3.</span>Change Base Url </h3><br>
+							<ol>
+								<li>Change the BASE_URL Variable Presented in the Constants File.</li>
+								<ul>
+									<li>It just updates your server’s primary URL to access all types of API Services From the App to your Server.</li>
+									<li>like this
+										<ul>
+											<li class="fw-bold"><strong>Note : File Location : project/lib/common/app_constants.dart</strong></li>
+										</ul>
+									</li>
+	<div class="container mt-5">
+	<div class="code-block">
+	<button class="copy-btn" data-code="codeToCopy1"><i class="fa fa-copy me-1"></i>Copy</button>
+	<pre><code id="codeToCopy1" class="php">
+	static const String baseUrl = 'your base url here';
+	</code></pre>
+	</div>
+	</div>
+	<br>
+								</ul> <br>
+								<li>Change App Color.</li>
+								<p>just update the below parameter to change the app color</p>
+								<p  class="fw-bold"><strong>Note : File Location : project/lib/common/app_colors.dart</strong></p>
+								<ul>
+									<li>Color primary = const Color(0xffFCB13D);</li>
+									<li>Color secondary = const Color(0xffFCB13D);</li>
+								</ul>
+							</ol>
+							
+						</section> <br>		
+
+<!-- change website url  -->
+						<section class="docs-section" id="change-website-url-setup">
+							<h3 class="section-title"><span class="text-theme me-2">4.</span>Change Website Url</h3>
+							<ol start="3">
+								<li>change website url in given files,</li>
+							</ol>
+							<ul>
+								<li class="fw-bold"><strong>Note : File Location project/lib/common/app_constants.dart</strong></li>
+							</ul> 
+
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy2"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy2" class="php">   
+  static const String termsCondition = 'your terms and condition url';
+</code></pre>
+</div>
+</div>
+<br>
+							<ul>
+								<li class="fw-bold"><strong>Note : File Location project/lib/common/app_constants.dart</strong></li>
+							</ul> 
+
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy3"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy3" class="php">
+static const String privacyPolicy = 'your privacy policy url';   		
+</code></pre>
+</div>
+</div>
+<br>
+						</section> <br>
+						<section class="docs-section" id="google-map-cloud-configure-setup">
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">5.</span>Google Map & Cloud Configure </h3><br>
+							<ol>
+								<li>Create & configure account for map using Google map & Cloud by following below documents.</li>
+									<ul>
+										<li>Google Cloud console link:<a href="https://developers.google.com/maps/documentation/android-sdk/cloud-setup" target="_blank">https://developers.google.com/maps/documentation/android-sdk/cloud-setup</a></li>
+										<li>firebase setup doc:<a href="https://firebase.google.com/docs/android/setup" target="_blank">https://firebase.google.com/docs/android/setup</a></li>
+									</ul> <br>
+								<li>After created & enabled the billing from google cloud & map console</li>
+								<ul>
+									<li>add map api key change the map keys in given locations</li>
+								</ul>
+							</ol>
+							<ul>
+								<li class="fw-bold"><strong>Note : File Location "project/android/app/src/main/AndroidManifest.xml"</strong></li>
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy5"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy5" class="php">
+&lt;meta-data android:name="com.google.android.geo.API_KEY"
+android:value="your maps api key here"/&gt;			
+</code></pre>
+</div>
+</div>
+<br>
+
+								<li class="fw-bold"><strong>Note : File Location "project/lib/common/app_constant.dart"</strong></li>
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy6"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy6" class="php">
+ static String mapKey = Platform.isAndroid ? 'android map key' : 'ios map key';		
+</code></pre>
+</div>
+</div>
+<br>
+
+								<li>add android map key with restriction for android package and add ios map key with restriction for ios bundle id</li>
+								<li> after setup the firebase download googleservices.json file as shown in image.</li>
+								<div class="simplelightbox-gallery row mb-3">
+									<div class="col-12 col-md-12 mb-3">
+										<a href="assets/images/google-service-download.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/google-service-download.png" alt="" /></a>
+									</div>
+								</div>
+								<li>add google-services.json in project/android/app/</li>
+								<li>after open the google-services.json file, and find out the "api_key","mobilesdk_app_id","project_id","project_number"</li>
+								<li>replace these key values in "project/lib/common/app_constant.dart" file</li>
+								<li>(project_number as firebasemessagingSenderId, mobilesdk_app_id as firebaseAppId)</li>							                  
+								<li>We need to create nodes in firebase realtime database, please find the sample json database below or refer firebase setup.</li>
+								<li><a href="https://restart.ondemandappz.com/firebase-database.json" target="_blank" style="text-decoration: none;">Sample-json</a></li>
+								<li><span class="fw-bold"><strong>call_FB_OTP</strong></span> node is used to configure whether the firebase otp should used or dummy otp should use for our testing purpose</li>
+								<li  class="fw-bold"><strong>Please make sure you have created the nodes mentioned below</strong></li>
+								<ul>
+									<li>call_FB_OTP</li>
+								</ul>
+								<li class="fw-bold"><strong>Update the rules part with below content</strong></li>
+
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy7"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy7" class="php">
+{
+"rules": {
+"drivers": {
+".read": true,
+".write":true,
+	".indexOn":["is_active","g","service_location_id","vehicle_type","l","ownerid"],
+},
+"requests": {
+".read": true,
+".write": true,
+	".indexOn":["service_location_id"],
+},
+	"SOS": {
+".read": true,
+".write": true
+},
+	"call_FB_OTP": {
+".read": true,
+".write": true
+},
+"driver_android_version": {
+".read": true,
+".write": true
+},
+"driver_ios_version": {
+".read": true,
+".write": true
+},
+"user_android_version": {
+".read": true,
+".write": true
+},
+"user_ios_version": {
+".read": true,
+".write": true
+},
+"user_package_name": {
+".read": true,
+".write": true
+},
+"user_bundle_id": {
+".read": true,
+".write": true
+},
+"driver_package_name": {
+".read": true,
+".write": true
+},
+"driver_bundle_id": {
+".read": true,
+".write": true
+},
+"request-meta": {
+".read": true,
+".write": true,
+	".indexOn":["driver_id","user_id"]
+},
+"bid-meta": {
+".read": true,
+".write": true,
+	".indexOn":["driver_id","user_id","g"]
+},
+"owners": {
+".read": true,
+".write": true,
+	".indexOn":["driver_id","user_id"]
+},
+"chats": {
+".read": true,
+".write": true
+},
+}
+}	
+</code></pre>
+</div>
+</div>
+<br>
+							</ul> 
+							
+						</section> <br>	
+						<section class="docs-section" id="change-package-name-setup">
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">6.</span>Change Package Name </h3><br>
+							<h3 class="section-title underline underline-success">Manually Change Package Name </h3><br>
+							<ol>
+								<li>Download & Paste the google-services.json into the 'project/android/app' folder properly to make proper communication from your App which is a client to FireBase.</li>
+								<div class="simplelightbox-gallery row mb-3">
+									<div class="col-12 col-md-12 mb-3">
+										<a href="assets/images/firebase-setup.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/firebase-setup.png" alt="" /></a>
+									</div>
+								</div>
+								<li>copy the package name from firebase and paste it in the following files
+							</ol>
+							<ul>
+								<li class="fw-bold"><strong>Note : File Location "project/android/app/build.gradle"</strong></li>
+								<li class="fw-bold"><strong>Note : File Location "project/android/app/src/main/java/../../../ChatHeadService.java"</strong></li>
+								<li class="fw-bold"><strong>Note : File Location "project/android/app/src/main/kotlin/../../../MainActivity.kt"</strong></li>
+								<li class="fw-bold"><strong>Note : File Location "project/android/app/src/main/AndroidManifest.xml"</strong></li>
+								<li class="fw-bold"><strong>Note : File Location "project/lib/common/common_setup.dart"</strong></li>
+								<li class="fw-bold"><strong>Note : File Location "project/lib/core/services/bubble_service.dart"</strong></li>
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy8"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy8" class="php">
+(build.gradle)
+
+applicationId "package name here"
+
+namespace "package name here"
+
+(ChatHeadService.java)
+
+package "package name here"
+
+import static "package name here"
+
+(MainActivity.kt)
+
+package "package name here"
+
+channel = MethodChannel(flutterEngine!!.dartExecutor.binaryMessenger, "package name here")
+
+(AndroidManifest.xml)
+"package name here" - 2 places
+
+(common_setup.dart)
+"package name here" - 2 places
+
+(bubble_service.dart)
+"package name here" - 1 places
+		
+</code></pre>
+</div>
+</div>
+<br>
+
+								<li class="fw-bold"><strong>Note : File Location "project/android/app/src/main/kotlin/../../../MainActivity.kt"</strong></li>
+								<li class="fw-bold"><strong>Note : File Location "project/android/app/src/main/java/../../../ChatHeadService.java"</strong></li>
+								<ul>
+									<li>add package name here</li>
+								</ul>
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy9"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy9" class="php">
+package com.project.name
+		
+</code></pre>
+</div>
+</div>
+<br>
+
+								<ol start="3">
+									<li>change folder name</li>
+									<p>if your package name is com.package.android then,</p>
+								</ol>
+
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy10"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy10" class="php">
+project/android/app/src/main/kotlin/com/something/something/ to project/android/app/src/main/kotlin/com/package/android
+project/android/app/src/main/java/com/something/something/ to project/android/app/src/main/java/com/package/android
+	
+</code></pre>
+</div>
+</div>
+<br>
+</ul>
+							
+<h3 class="section-title underline underline-success">Change Package Name with comment</h3><br>
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy11"><i class="fa fa-copy me-2"></i>Copy</button>
+<pre><code id="codeToCopy11" class="php">
+dart run change_app_package_name:main com.new.package.name		
+</code></pre></section> <br>
+	
+						<section class="docs-section" id="change-icons-setup">
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">7.</span>Change Icons </h3><br>
+							<ol>
+								<li>replace icons images in following folders in given name</li>
+								<ul>
+									<li>project/assets/images/ - logo.png</li>
+									<li>project/assets/images/ - icon.png</li>
+									<li>project/assets/images/ - loader_image.png</li>
+									<!-- <li>project/assets/images/ - icon.png (circle image 500x500, only for driver)</li> -->
+									<li>project/android/app/src/main/res/mipmap-hdpi - ic_launcher.png (72x72)</li>
+									<li>project/android/app/src/main/res/mipmap-mdpi - ic_launcher.png (48x48)</li>
+									<li>project/android/app/src/main/res/mipmap-xhdpi - ic_launcher.png (96x96)</li>
+									<li>project/android/app/src/main/res/mipmap-xxhdpi - ic_launcher.png (144x144)</li>
+									<li>project/android/app/src/main/res/mipmap-xxxhdpi - ic_launcher.png (192x192)</li>
+									<li>project/android/app/src/main/res/drawable/ - logo.png</li>
+								</ul>
+							</ol>
+														
+<h3 class="section-title underline underline-success">You can use this link for icon change</h3><br>
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy12"><i class="fa fa-copy me-2"></i>Copy</button>
+<pre><code id="codeToCopy12" class="php">
+	https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html#foreground.type=image&foreground.space.trim=0&foreground.space.pad=0&foreColor=rgba(96%2C%20125%2C%20139%2C%200)&backColor=rgb(156%2C%2039%2C%20176)&crop=0&backgroundShape=circle&effects=none&name=ic_launcher	
+</code></pre></section> <br>
+						</section> <br>	
+
+						<section class="docs-section" id="change-display-name-setup">
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">8.</span>Change Display Names </h3><br>
+							<ol>
+								<li>change app display name in file,</li>								
+							</ol>
+							<ul>
+								<li class="fw-bold"><strong>Note : File Location "project/android/app/src/main/AndroidManifest.xml"</strong></li>
+							
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy11"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy11" class="php">
+android:label="product name"
+
+project/lib/common/app_constants.dart
+
+static const String title = 'product name';
+</code></pre>
+<!-- </div> -->
+<!-- </div>
+<br>
+								<ul>
+									<li class="fw-bold"><strong>Note : File Location "project/lib/functions/functions.dart - (only in driver)"</strong></li>	
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy12"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy12" class="php">
+product name will continue	
+</code></pre>
+</div>
+</div>
+<br>	
+
+									<li class="fw-bold"><strong>Note : File Location "project/lib/pages/login/agreement.dart</strong></li>	
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy13"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy13" class="php">
+replaceAll('5555', 'Product Name')
+</code></pre>
+</div> -->
+</div>
+<!-- <br> -->
+								<!-- </ul> -->
+							<!-- </ul>						 -->
+							
+						<!-- </section> -->
+						 <br>	 
+
+						<section class="docs-section" id="change-app-version-setup"></section>
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">9.</span>Change App Version </h3><br>
+							<ol>
+								<li>change app version</li>
+							</ol>	
+							<p class="fw-bold"><strong>Note : File Location "project/pubsec.yaml"</strong></p>	
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy14"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy14" class="php">
+version: 1.0.2+3
+</code></pre>
+</div>
+</div>
+<!-- <br> -->
+							
+						<!-- </section> <br> -->
+						<section class="docs-section" id="create-release-key-setup"></section>
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">10.</span>Create release keys </h3><br>
+							<ol>
+								<li>create release keys by running command in terminal</li>
+							</ol>	
+							<p class="fw-bold"><strong>note: change anyname with any specific name you like,</strong></p>	
+							<p>keytool -genkey -v -keystore ./(jks file name).jks -keyalg RSA -keysize 2048 -validity 10000 -alias (alias name) -storetype JKS
+							</p>
+							<ul>
+								<li>after running this command give the data asked in the terminal. after that it will save the jks file and display the location</li>
+							</ul>							
+						<!-- </section> <br> -->
+
+						<section class="docs-section" id="replace-jks-key-setup"></section>
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">11.</span>Replace the jks key </h3><br>
+							<ol>
+								<li>replace the jks key details in file,</li>
+							</ol>	
+							<p class="fw-bold"><strong>Note : File Location "project/android/key.properties as given below"</strong></p>	
+<div class="container mt-5">
+<div class="code-block">
+<button class="copy-btn" data-code="codeToCopy15"><i class="fa fa-copy me-1"></i>Copy</button>
+<pre><code id="codeToCopy15" class="php">
+storePassword=password you entered while creating jks file
+
+keyPassword=password you entered while creating jks file
+
+keyAlias=alias name you given in the command for creating jks file
+
+storeFile=jks file name with the location like ../../../jks
+</code></pre>
+</div>
+</div>
+<!-- <br> -->
+							
+						<!-- </section> <br> -->
+						<section class="docs-section" id="generate-sha-1-setup"></section>
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">12.</span>Generate SHA-1 </h3><br>
+							<ol start="1">
+								<li>Generate SHA-1 and SHA-256 keys from the project</li>
+								<ul style="list-style-type:none;">
+									<li>you will be able to get these keys in two ways these are in terminal go to folder 
+										'project/android/' and run the command './gradlew signinReport' then you will get
+										 debug and release SHA-1 and SHA-256 Run the below command in the terminal to
+										  get SHA keys Key tool -genkey -v -keystore release.keystore -alias  
+										  <input type="checkbox" disabled/>
+										  -keyalg RSA -keysize 2048 -validity 10000
+									</li>
+								</ul>
+							</ol>
+							<p>Finally copy that debug and release keys and paste those in Firebase where</p>	
+							<p>Click Settings icon (presented right on project overview ) -> project settings -> Your App section -> SHA certificate</p>
+							<p>fingerprints click add button and paste & Submit.</p>							
+						<!-- </section> <br> -->
+
+						<section class="docs-section" id="google-map-service-setup"></section>
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">13.</span>Google Map Services Setup</h3><br>
+							<ol start="1">
+								<li>Google Map Services Setup</li>
+								</ol>
+								<ul>
+									<li>Enable below services in cloud console</li>
+									<ul>
+										<li>Places API(New) - which helps to get address while typing keys from the app</li>
+										<li>Routes API - which helps to get routes for locations</li>
+										<li>Maps SDK For Android & Maps SDK For iOS</li>
+										<li>Android Device Verification - For Identify the App name to append in OTP from Firebase</li>
+										<li>Geolocation APIs like geocoding, geolocations, Maps JavaScript, Maps static.</li>
+									</ul>
+								</ul>
+						<!-- </section> <br> -->
+
+						<section class="docs-section" id="generate-apk-setup"></section>
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">14.</span>Generate APK</h3><br>
+							<ol>
+								<li>we have the flavour configuration in project, so we can use like this to build release application</li>							
+								<li>to download apk file run "flutter build apk --release -t lib/env/main_dev.dart " in terminal from project location, and you will get apk file in folder - project/build/app/outputs/apk/release/app-release.apk</li>
+							</ol>
+						<!-- </section> <br> -->
+
+						<section class="docs-section" id="generate-bundle-file-setup"></section>
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">15.</span>Generate bundle file</h3><br>
+							<ol  start="1">
+								<li>to download app bundle file run "flutter build appbundle --release -t lib/env/main_dev.dart " in terminal from project location, and you will get app bundle file in folder - project/build/app/outputs/bundle/release/app-release.aab</li>
+							</ol>
+						<!-- </section> <br> -->
+
+						<section class="docs-section" id="final-steps-setup"></section>
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2">16.</span>Final Steps</h3><br>
+							<ol  start="1">
+								<li>after uploading app in playstore, then you will get a sha1 key and sha256 key from playstore, add those keys in your firebase project as</li>
+							</ol>
+							<p>Click Settings icon (presented right on project overview ) -> project settings -> Your App section -> SHA certificate</p>
+							<p>fingerprints click add button and paste & Submit.</p>
+						<!-- </section> <br> -->
+
+						<section class="docs-section" id="custom-vehicle-setup"></section>
+							<h3 class="section-title underline underline-success"><span class="text-theme me-2"></span>Custom Vehicle Image Change</h3><br>
+							<l>
+								<li>vehicle type images can change in below location</li>
+							</l>	
+							<p class="fw-bold"><strong>note: if change any vehicle type images, name that image file name as the old image file</strong></p>	
+							<p> "project/assets/images/...."</p>	
+
+					<div class="d-flex justify-content-between mt-4">
+						<a href="backend-config.html" class="btn btn-secondary">&larr; Previous</a>
+						<a href="flutter-ios.html" class="btn btn-theme">Next &rarr;</a>
+					</div>
+			    </article>
+			</div>
+			<div class="col-lg-3">
+				<div class="docs-toc" id="small-nav">
+					<nav id="toc" class="toc">
+						<nav id="docs-nav" class="docs-nav navbar">
+							<ul class="section-items list-unstyled nav flex-column pb-3">
+								<li class="nav-item section-title mt-3"><a class="nav-link scrollto active" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Flutter Android Setup</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#docs-intro">1.Introduction</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#setup-instruct">2.Setup Instructions</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#change-base-url-setup">3.Change Base Url</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#change-website-url-setup">4.Change Website Url</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#google-map-cloud-configure-setup">5.Google Map & Cloud Configure</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#change-package-name-setup">6.Change Package Name</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#change-icons-setup">7. Change Icons</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#change-display-name-setup">8. Change Display Names</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#change-app-version-setup">9. Change App Version</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#create-release-key-setup">10. Create release keys</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#replace-jks-key-setup">11. Replace the jks key</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#generate-sha-1-setup">12. Generate SHA-1</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#google-map-service-setup">13. Google Map Services Setup</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#generate-apk-setup">14. Generate APK</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#generate-bundle-file-setup">15. Generate bundle file</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#final-steps-setup">16. Final Steps</a></li>
+							</ul>
+					</nav>
+				</div>
+			</div>
+				
+		<div class="col-lg-9">
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			            <small class="copyright">Misoftwares</small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item">
+							  <a href="https://www.instagram.com/mi_softwares/" target="_blank" rel="noopener noreferrer">
+							    <i class="fab fa-instagram fa-fw"></i>
+							  </a>
+							</li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+			</div>
+		</div>	
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+
+ <!-- Optional: Custom CSS for dark theme -->
+<style>
+	.hljs {
+	background: #000000;
+	color: #ffffff;
+	}
+</style>
+	 <!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- highlight.js JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script> -->
+    <!-- <script src="assets/js/highlight-custom.js"></script>  -->
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+    <script src="assets/js/other.js"></script> 
+
+</body>
+</html> 
+

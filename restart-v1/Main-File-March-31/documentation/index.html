@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Restart-Docs</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="documentation">
+    <meta name="author" content="misoftwares">    
+    <link rel="shortcut icon" href="assets/images/logo-mini.png"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"> -->
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/other.css">
+
+	   <!-- Bootstrap CSS -->
+	   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+	   <!-- highlight.js CSS -->
+	   <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/logo.png" width="200" class="img-fluid" alt="logo"></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center me-4">
+		            <a href="#" class="btn btn-theme d-flex d-lg-flex">Buy</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link active" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Installation</a></li>
+				    <li class="nav-item"><a class="nav-link active" href="index.html">Server-Installation</a></li>
+				    <li class="nav-item"><a class="nav-link" href="backend-config.html">Admin Panel Configuration</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-android.html">Flutter-Android Setup</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-ios.html">Flutter-IOS Setup</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-translate.html">Flutter-Translation Setup</a></li>
+				    <li class="nav-item"><a class="nav-link" href="payment-gateway.html">Payment Gateway</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sms-gateway.html">SMS Gateway</a></li>   
+                    <li class="nav-item"><a class="nav-link" href="admin-app.html">Admin App</a></li>
+                    <li class="nav-item"><a class="nav-link" href="web-booking.html">Web Booking Setup</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>User Manual</a></li>
+				    <li class="nav-item"><a class="nav-link" href="admin-app-setup.html">Required Admin-App Setup</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Update</a></li>
+				    <li class="nav-item"><a class="nav-link" href="admin-app-update.html">Admin-App</a></li>
+				    <li class="nav-item"><a class="nav-link" href="mobile-app-update.html">Mobile App</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-bug"></i></span>Common Issues</a></li>
+				    <li class="nav-item"><a class="nav-link" href="server-app-issue.html">Server-App Issues</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-app-issue.html">Flutter-App Issues</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+				<div class="row">
+                    <div class="col-md-6 col-lg-9">		
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Server-Installation</h1>
+<!-- Pre Requirements -->
+		<section class="docs-section" id="pre-request-list">
+		    <h3 class="section-title"><span class="text-theme me-2"></span>Prerequisites</h3>
+		    <ol>
+		        <li class="fw-bold"><strong class="me-1">Apache</strong></li>
+		        <li class="fw-bold"><strong class="me-1">MySQL 8.0</strong></li>
+		        <li class="fw-bold"><strong class="me-1">PHP 8.2</strong> with extensions:
+		            <ul>
+		                <li>bcmath</li>
+		                <li>bz2</li>
+		                <li>intl</li>
+		                <li>gd</li>
+		                <li>mbstring</li>
+		                <li>mysql</li>
+		                <li>zip</li>
+		                <li>fpm</li>
+		                <li>curl</li>
+		                <li>xml</li>
+		            </ul>
+		        </li>
+		        <li class="fw-bold"><strong class="me-1">phpMyAdmin</strong></li>
+		        <li class="fw-bold"><strong class="me-1">Composer</strong></li>
+		        <li class="fw-bold"><strong class="me-1">Node.js v20.12.2</strong></li>
+		        <li class="fw-bold"><strong class="me-1">npm v10.8.3</strong></li>
+		        <li class="fw-bold"><strong class="me-1">Domain</strong> - Specify your domain name (e.g., example.com) for the application to function properly.</li>
+                <li class="fw-bold">
+                    <strong class="me-1">FTP:</strong> Used for building and deploying applications.
+                </li>
+                <li class="fw-bold">
+                    <strong class="me-1">Laravel Supervisor:</strong> Manages and runs Laravel background jobs efficiently.
+                </li>
+		    </ol>
+		    <br>
+		</section>	
+
+<!-- introduction  -->
+    <section class="docs-section" id="docs-intro">
+		<h2 class="section-heading"><span class="text-theme me-2">1.</span>Introduction</h2>
+	    <p>We are strongly prefer any Server with ubuntu OS. Because it is quite easy to setup and maintain.</p>
+		<h4>Minimum Server Requirements</h4>
+		<ul>
+			<li><strong class="me-1">Any server with UBUNTU Preferred</strong></li>
+			<li><strong class="me-1">4 GB Ram</strong> </li>
+			<li><strong class="me-1">30 GB Stoarge</strong></li>
+			<li><strong class="me-1">vCPU 2 cores</strong></li>
+		</ul> <br>
+		</section>
+
+<!-- install apache -->
+<section class="docs-section" id="install-apache">
+    <h3 class="section-title"><span class="text-theme me-2">2.</span>Install Apache</h3>
+    <p>Follow these steps to install and configure Apache:</p>
+
+    <h4>Steps to Install Apache</h4>
+    <ul>
+        <li><strong>Step 1:</strong> Open the SSH terminal for your AWS instance using the PEM file.</li>
+
+        <li><strong>Step 2:</strong> Install Apache by running:
+            <code>"<span class="sentence" data-text="sudo apt install apache2">sudo apt install apache2</span>"</code>
+        </li>
+
+        <li><strong>Step 3:</strong> Update the package list:
+            <code>"<span class="sentence" data-text="sudo apt update">sudo apt update</span>"</code>
+        </li>
+
+        <li><strong>Step 4:</strong> Edit the Apache configuration file:
+            <code>"<span class="sentence" data-text="sudo nano /etc/apache2/sites-available/000-default.conf">sudo nano /etc/apache2/sites-available/000-default.conf</span>"</code>
+        </li>
+    </ul>
+
+    <h4>Apache Configuration</h4>
+    <div class="container mt-5">
+        <div class="code-block">
+            <button class="copy-btn" data-code="codeToCopy1"><i class="fa fa-copy me-1"></i>Copy</button>
+            <pre><code id="codeToCopy1" class="php">
+&lt;Directory /var/www/html&gt;
+    Options -Indexes
+    AllowOverride All
+    Require all granted
+    ErrorDocument 403 "You don't have permission to access this URL"
+    ErrorDocument 404 "The requested page was not found. Please contact the admin for more details."
+&lt;/Directory&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <ul>
+        <li><strong>Step 5:</strong> Restart the Apache service:
+            <code>"<span class="sentence" data-text="sudo service apache2 restart">sudo service apache2 restart</span>"</code>
+        </li>
+    </ul>
+
+    <p>For more detailed instructions, check out the guide here: <a href="https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04" target="_blank">How to Install the Apache Web Server on Ubuntu 20.04</a></p>
+    <div class="video-tutorial">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/nROlunVwk6Q?list=PL9W4itTd3tG-xwbtty6uV9qNMwohORdtR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+</section>
+
+<!-- Install PHP 8.2 -->
+<section class="docs-section" id="install-php">
+    <h3 class="section-title underline underline-success"><span class="text-theme me-2">3.</span>Install PHP 8.2</h3>
+    <p>Follow the steps below to install PHP 8.2, along with the required extensions:</p>
+    <p><strong>Required Extensions:</strong> bcmath, bz2, intl, gd, mbstring, mysql, zip, fpm, curl, xml</p>
+    
+    <h4>Steps to Install PHP 8.2</h4>
+    <ul>
+        <li><strong>Step 1:</strong> Update your package list:
+            <code>"<span class="sentence" data-text="sudo apt update">sudo apt update</span>"</code>
+        </li>
+
+        <li><strong>Step 2:</strong> Install necessary software properties:
+            <code>"<span class="sentence" data-text="sudo apt install software-properties-common">sudo apt install software-properties-common</span>"</code>
+        </li>
+
+        <li><strong>Step 3:</strong> Add the PHP repository:
+            <code>"<span class="sentence" data-text="sudo add-apt-repository ppa:ondrej/php">sudo add-apt-repository ppa:ondrej/php</span>"</code>
+        </li>
+        
+        <li><strong>Step 4:</strong> Update your package list again:
+            <code>"<span class="sentence" data-text="sudo apt update">sudo apt update</span>"</code>
+        </li>
+
+        <li><strong>Step 5:</strong> Install PHP 8.2:
+            <code>"<span class="sentence" data-text="sudo apt install php8.2">sudo apt install php8.2</span>"</code>
+        </li>
+
+        <li><strong>Step 6:</strong> Install the required PHP 8.2 extensions:
+            <code>"<span class="sentence" data-text="sudo apt-get install php8.2-{bcmath,bz2,intl,gd,mbstring,mysql,zip,fpm,curl,xml} -y">sudo apt-get install php8.2-{bcmath,bz2,intl,gd,mbstring,mysql,zip,fpm,curl,xml} -y</span>"</code>
+        </li>
+    </ul>
+
+    <p>For detailed instructions, refer to the guide here: <a href="https://dev.to/sureshramani/how-to-install-php-82-on-ubuntu-2204-4ih6" target="_blank">How to Install PHP 8.2 on Ubuntu 22.04</a></p>
+    <div class="video-tutorial">
+    <iframe 
+        width="100%" 
+        height="400" 
+        src="https://www.youtube.com/embed/sXW0gQRVrjk?list=PL9W4itTd3tG_1FJGLNtnD0uHDvV4TCRlu" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+</section>
+
+<br>
+<!-- install mysql  -->
+<section class="docs-section" id="install-mysql">
+    <h3 class="section-title"><span class="text-theme me-2">4.</span>Install MySQL</h3>
+    <p>Follow these steps to install MySQL:</p>
+    
+    <h4>Steps to Install MySQL</h4>
+    <ul>
+        <li><strong>Step 1:</strong> Update the package list:
+            <code>"<span class="sentence" data-text="sudo apt-get update">sudo apt-get update</span>"</code>
+        </li>
+
+        <li><strong>Step 2:</strong> Install MySQL server:
+            <code>"<span class="sentence" data-text="sudo apt-get install mysql-server">sudo apt-get install mysql-server</span>"</code>
+        </li>
+
+        <li><strong>Step 3:</strong> Secure the MySQL installation:
+            <code>"<span class="sentence" data-text="mysql_secure_installation">mysql_secure_installation</span>"</code>
+        </li>
+
+        <li><strong>Step 4:</strong> Restart the MySQL service:
+            <code>"<span class="sentence" data-text="sudo service mysql restart">sudo service mysql restart</span>"</code>
+        </li>
+    </ul>
+
+    <h4>Creating a New MySQL User</h4>
+    <p>To set up a new MySQL user, follow these steps:</p>
+    <ul>
+        <li><strong>Step 1:</strong> Log in to MySQL as the root user:
+            <code>"<span class="sentence" data-text="sudo mysql -u root">sudo mysql -u root</span>"</code>
+        </li>
+
+        <li><strong>Step 2:</strong> It Will Switch to the MySQL database For create user.
+        </li>
+
+        <li>
+            <strong>Step 3:</strong>Create User:<code>"<span class="sentence" data-text="CREATE USER 'TaxiUser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'TaxiUser@123';">CREATE USER 'TaxiUser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'TaxiUser@123';</span>"
+            </code>
+        </li>
+        <li>
+            <strong>Step 4:</strong> Grant privileges:
+            <code>"<span class="sentence" data-text="GRANT ALL ON *.* TO 'TaxiUser'@'localhost';">GRANT ALL ON *.* TO 'TaxiUser'@'localhost';</span>"</code>
+        </li>
+        <li><strong>Step 5:</strong> Apply the changes:
+            <code>"<span class="sentence" data-text="FLUSH PRIVILEGES;">FLUSH PRIVILEGES;</span>"</code>
+        </li>
+    </ul>
+
+    <p>For detailed instructions, refer to the guide here: <a href="https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04" target="_blank">How to Install MySQL on Ubuntu 20.04</a></p>
+<div class="video-tutorial">
+<iframe 
+    width="100%" 
+    height="400" 
+    src="https://www.youtube.com/embed/HiUaMv9Qd3M?list=PL9W4itTd3tG_1FJGLNtnD0uHDvV4TCRlu" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
+</div>
+
+</section>
+<br>
+<!-- install phpmyadmin -->
+<section class="docs-section" id="install-phpmyadmin">
+    <h3 class="section-title underline underline-success"><span class="text-theme me-2">5.</span>Install phpMyAdmin</h3>
+    <p>Follow these steps to install phpMyAdmin:</p>
+
+    <h4>Steps to Install phpMyAdmin</h4>
+    <ul>
+        <li><strong>Step 1:</strong> Navigate to the directory:
+            <code>"<span class="sentence" data-text="cd /var/www/html">cd /var/www/html</span>"</code>
+        </li>
+
+        <li><strong>Step 2:</strong> Download the phpMyAdmin package using the following command:
+            <code>"<span class="sentence" data-text="sudo wget https://files.phpmyadmin.net/phpMyAdmin/5.2.1/phpMyAdmin-5.2.1-all-languages.zip">sudo wget https://files.phpmyadmin.net/phpMyAdmin/5.2.1/phpMyAdmin-5.2.1-all-languages.zip</span>"</code>
+        </li>
+
+        <li><strong>Step 3:</strong> Unzip the downloaded package:
+            <code>"<span class="sentence" data-text="sudo unzip phpMyAdmin-5.2.1-all-languages.zip">sudo unzip phpMyAdmin-5.2.1-all-languages.zip</span>"</code>
+        </li>
+
+        <li><strong>Step 4:</strong> Rename the extracted folder to "pma":
+            <code>"<span class="sentence" data-text="sudo mv phpMyAdmin-5.2.1-all-languages pma">sudo mv phpMyAdmin-5.2.1-all-languages pma</span>"</code>
+        </li>
+        <li><strong>Step 5:</strong> Rewrite enmod:
+            <code>"<span class="sentence" data-text="sudo a2enmod rewrite">sudo a2enmod rewrite     </span>"</code>
+        </li>        
+    </ul>
+
+    <p>After completing these steps, phpMyAdmin will be ready to use at <code>http://your_server_ip/pma</code>.</p>
+     <div class="video-tutorial">
+<iframe 
+    width="100%" 
+    height="400" 
+    src="https://www.youtube.com/embed/afWEhKREGBY?list=PL9W4itTd3tG_1FJGLNtnD0uHDvV4TCRlu" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
+    </div>
+</section>
+<br>
+<!-- node install -->
+<section class="docs-section" id="node-npm-install">
+    <h3 class="section-title underline underline-success">
+        <span class="text-theme me-2">6.</span>Node.js and npm Installation
+    </h3>
+    <p>Follow these steps to install the required versions of Node.js and npm:</p>
+    <ol>
+        <li class="fw-bold">
+            <strong>Step 1: Install Node.js v20.12.2</strong>
+            <p>To install Node.js v20.12.2, use the Node Version Manager (nvm). If you don't have nvm installed, install it first by using the following command:</p>
+            <code>"<span class="sentence" data-text="curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash</span>"</code>
+            <p>After installing nvm, close and reopen the terminal, then proceed to install Node.js:</p>
+            <code>"<span class="sentence" data-text="nvm install 20.12.2">nvm install 20.12.2</span>"</code>
+            <p>Set Node.js v20.12.2 as the default version:</p>
+            <code>"<span class="sentence" data-text="nvm use 20.12.2">nvm use 20.12.2</span>"</code>
+        </li>
+
+        <li class="fw-bold">
+            <strong>Step 2: Install npm v10.8.3</strong>
+            <p>After installing Node.js, install the specific npm version using the following command:</p>
+            <code>"<span class="sentence" data-text="npm install -g npm@10.8.3">npm install -g npm@10.8.3</span>"</code>
+        </li>
+
+        <li class="fw-bold">
+            <strong>Step 3: Verify the installation</strong>
+            <p>Check the installation of Node.js and npm to ensure they are correctly installed:</p>
+            <code>"<span class="sentence" data-text="node -v">node -v</span>"</code>
+            <p>Verify the npm version:</p>
+            <code>"<span class="sentence" data-text="npm -v">npm -v</span>"</code>
+        </li>
+    </ol>
+
+    <h4>Reference Links</h4>
+    <p>For further information, please visit the following links:</p>
+    <ul>
+        <li>
+            <a href="https://github.com/nvm-sh/nvm" target="_blank">Node Version Manager (nvm) - GitHub</a>
+        </li>
+        <li>
+            <a href="https://nodejs.org/en/download/releases/" target="_blank">Node.js Releases</a>
+        </li>
+        <li>
+            <a href="https://docs.npmjs.com/cli/v10/commands/npm" target="_blank">npm Documentation</a>
+        </li>
+    </ul>
+    <div class="video-tutorial">
+<iframe 
+    width="100%" 
+    height="400" 
+    src="https://www.youtube.com/embed/MkKDO-RRBGM?list=PL9W4itTd3tG_1FJGLNtnD0uHDvV4TCRlu" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
+    </div>
+</section>
+<!-- install composer  -->
+<section class="docs-section" id="install-composer">
+    <h3 class="section-title"><span class="text-theme me-2">7.</span>Install Composer</h3>
+    <p>Follow these steps to install Composer:</p>
+    <ol>
+        <li class="fw-bold">
+            <strong>Step 1: Navigate to the home directory</strong>
+            <p>Start by navigating to the home directory:</p>
+            <code>"<span class="sentence" data-text="cd ~">cd ~</span>"</code>
+        </li>
+        <li class="fw-bold">
+            <strong>Step 2: Download the Composer installer</strong>
+            <p>Use the following command to download the Composer installer script:</p>
+            <code>"<span class="sentence" data-text="curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php">curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php</span>"</code>
+        </li>
+        <li class="fw-bold">
+            <strong>Step 3: Verify the installer signature</strong>
+            <p>First, get the expected hash for the installer:</p>
+            <code>"<span class="sentence" data-text="HASH=`curl -sS https://composer.github.io/installer.sig`">HASH=`curl -sS https://composer.github.io/installer.sig`</span>"</code>
+            <p>Then, display the hash value:</p>
+            <code>"<span class="sentence" data-text="echo $HASH">echo $HASH</span>"</code>
+        </li>
+        <li class="fw-bold">
+            <strong>Step 4: Validate the installer</strong>
+            <p>Check if the downloaded installer matches the hash:</p>
+            <code>"<span class="sentence" data-text="php -r &#34;if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;&#34;">php -r &#34;if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;&#34;</span>"</code>
+        </li>
+        <li class="fw-bold">
+            <strong>Step 5: Install Composer</strong>
+            <p>If the installer is verified, proceed with the installation:</p>
+            <code>"<span class="sentence" data-text="sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer">sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer</span>"</code>
+        </li>
+        <li class="fw-bold">
+            <strong>Step 6: Verify the installation</strong>
+            <p>Run the following command to check that Composer is installed correctly:</p>
+            <code>"<span class="sentence" data-text="composer">composer</span>"</code>
+        </li>
+    </ol>
+
+    <p>Alternatively, you can follow the instructions from the reference link below:</p>
+    <p>Reference Link: 
+        <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04" target="_blank">
+            How to Install and Use Composer on Ubuntu 20.04 - DigitalOcean
+        </a>
+    </p>
+   <div class="video-tutorial">
+    <iframe 
+        width="100%" 
+        height="400" 
+        src="https://www.youtube.com/embed/K11K8exQvBM?list=PL9W4itTd3tG_1FJGLNtnD0uHDvV4TCRlu" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    </div>
+</section>
+
+
+<!-- install FTP -->
+<section class="docs-section" id="install-ftp">
+    <h3 class="section-title"><span class="text-theme me-2">8.</span>Install FTP</h3>
+    <p>Follow these instructions to install FTP on an Ubuntu server:</p>
+    <ol>
+        <li class="fw-bold">
+            <strong>Install vsftpd:</strong> <code>"<span class="sentence" data-text="sudo apt install vsftpd">sudo apt install vsftpd</span>"</code>
+        </li>
+        <li class="fw-bold">
+            <strong>Backup the vsftpd configuration file:</strong> <code>"<span class="sentence" data-text="sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.bak">sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.bak</span>"</code>
+        </li>
+        <li class="fw-bold">
+            <strong>Edit the vsftpd configuration file:</strong> <code>"<span class="sentence" data-text="sudo nano /etc/vsftpd.conf">sudo nano /etc/vsftpd.conf</span>"</code>. Add the following lines to the end of the file:
+            <div class="container mt-3">
+                <div class="code-block">
+                    <button class="copy-btn" data-code="codeToCopy2"><i class="fa fa-copy me-1"></i>Copy</button>
+                    <pre><code id="codeToCopy2" class="php">
+listen=NO
+listen_ipv6=YES
+anonymous_enable=NO
+local_enable=YES
+dirmessage_enable=YES
+write_enable=YES
+chroot_local_user=YES
+pasv_min_port=12000
+pasv_max_port=12100
+ssl_enable=NO
+port_enable=YES
+allow_writeable_chroot=YES
+                    </code></pre>
+                </div>
+            </div>
+        </li>
+        <li class="fw-bold">
+            <strong>Restart the vsftpd service:</strong> <code>"<span class="sentence" data-text="sudo systemctl restart vsftpd">sudo systemctl restart vsftpd</span>"</code>
+        </li>
+        <li class="fw-bold">
+            <strong>Create an FTP user:</strong> <code>"<span class="sentence" data-text="sudo adduser ftp_user">sudo adduser ftp_user</span>"</code>
+        </li>
+        <li class="fw-bold">
+            <strong>Assign the user's home directory:</strong> <code>"<span class="sentence" data-text="sudo usermod -d /var/www/html ftp_user">sudo usermod -d /var/www/html ftp_user</span>"</code>
+        </li>
+        <li class="fw-bold">
+            <strong>Add the user to the www-data group:</strong> <code>"<span class="sentence" data-text="sudo usermod -aG www-data ftp_user">sudo usermod -aG www-data ftp_user</span>"</code>
+        </li>
+        <li class="fw-bold">
+            <strong>Change ownership of the directory:</strong> Navigate to <strong>/var/www</strong> and then run: <code>"<span class="sentence" data-text="sudo chown -R ftp_user:www-data html/">sudo chown -R ftp_user:www-data html/</span>"</code>
+        </li>
+        <li class="fw-bold">
+            <strong>Update directory permissions:</strong> <code>"<span class="sentence" data-text="sudo chmod -R 775 html/">sudo chmod -R 775 html/</span>"</code>
+        </li>
+    </ol>
+</section>
+<br>
+
+
+
+
+					<div class="d-flex justify-content-end mt-4">
+						<a href="backend-config.html" class="btn btn-theme">Next &rarr;</a>
+					</div>
+			    </article>
+			</div>
+			<div class="col-lg-3">
+				<div class="docs-toc" id="small-nav">
+					<nav id="toc" class="toc">
+						<nav id="docs-nav" class="docs-nav navbar">
+							<ul class="section-items list-unstyled nav flex-column pb-3">
+								<li class="nav-item section-title mt-3"><a class="nav-link scrollto active" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Server-Installation</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#docs-intro">1.Introduction</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#install-apache">2.Install Apache</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#install-php">3.Install PHP 8.2</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#install-mysql">4.Install Mysql</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#install-phpmyadmin">5.Install phpmyadmin</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#node-npm-install">6.Install Node</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#install-composer">7.Install Composer</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#install-ftp">8.Install Ftp</a></li>
+                                
+							</ul>
+					</nav>
+				</div>
+			</div>
+				
+		<div class="col-lg-9">
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			            <small class="copyright">Misoftwares</small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+                            <li class="list-inline-item">
+                              <a href="https://www.instagram.com/mi_softwares/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram fa-fw"></i>
+                              </a>
+                            </li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+			</div>
+		</div>	
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+
+ <!-- Optional: Custom CSS for dark theme -->
+<style>
+	.hljs {
+	background: #000000;
+	color: #ffffff;
+	}
+</style>
+	 <!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- highlight.js JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script> -->
+    <!-- <script src="assets/js/highlight-custom.js"></script>  -->
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+    <script src="assets/js/other.js"></script> 
+
+</body>
+</html> 
+

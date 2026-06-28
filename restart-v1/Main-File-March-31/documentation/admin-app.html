@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Restart-Docs</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="documentation">
+    <meta name="author" content="misoftwares">    
+    <link rel="shortcut icon" href="assets/images/logo-mini.png"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/other.css">
+
+	   <!-- Bootstrap CSS -->
+	   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+	   <!-- highlight.js CSS -->
+	   <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/logo.png" width="200" class="img-fluid" alt="logo"></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center me-4">
+		            <a href="#" class="btn btn-theme d-flex d-lg-flex">Buy</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link active" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Installation</a></li>
+				    <li class="nav-item"><a class="nav-link" href="index.html">Server-Installation</a></li>
+				    <li class="nav-item"><a class="nav-link" href="backend-config.html">Backend Configuration</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-android.html">Flutter-Android Setup</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-ios.html">Flutter-IOS Setup</a></li>
+				    <li class="nav-item"><a class="nav-link " href="flutter-translate.html">Flutter-Translation Setup</a></li>
+				    <li class="nav-item"><a class="nav-link " href="payment-gateway.html">Payment Gateway</a></li>
+                    <li class="nav-item"><a class="nav-link " href="sms-gateway.html">SMS Gateway</a></li>  
+                    <li class="nav-item"><a class="nav-link" href="admin-app.html">Admin App</a></li>
+                    <li class="nav-item"><a class="nav-link" href="web-booking.html">Web Booking Setup</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>User Manual</a></li>
+				    <li class="nav-item"><a class="nav-link" href="admin-app-setup.html">Required Admin-App Setup</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Update</a></li>
+				    <li class="nav-item"><a class="nav-link" href="admin-app-update.html">Admin-App</a></li>
+				    <li class="nav-item"><a class="nav-link" href="mobile-app-update.html">Mobile App</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="javascript:void(0);"><span class="theme-icon-holder me-2"><i class="fas fa-bug"></i></span>Common Issues</a></li>
+				    <li class="nav-item"><a class="nav-link" href="server-app-issue.html">Server-App Issues</a></li>
+				    <li class="nav-item"><a class="nav-link" href="flutter-app-issue.html">Flutter-App Issues</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+				<div class="row">
+                    <div class="col-md-6 col-lg-9">		
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Admin App User Manual</h1>
+<!-- Introduction -->
+<section class="docs-section" id="docs-intro">
+    <h2 class="section-heading"><span class="text-theme me-2">1.</span>Introduction</h2>
+    <p>Restart is a versatile taxi and on-demand ride booking application that not only provides transportation and ride-sharing services but also facilitates parcel delivery and logistics solutions. Restart offers clients all the essential services, including the ability to book various types of vehicles, set booking parameters, and access comprehensive booking details.</p>
+    <p>Our application supports multiple currencies and time zones, making it suitable for deployment worldwide. Additionally, Restart features multilingual support, allowing users to interact in their preferred languages. You can customize localization content through the translation options available in our admin app, ensuring a tailored experience for users across different regions.</p>
+</section>
+	  
+
+<section class="docs-section" id="major-modules">
+    <h3 class="section-title">Major Modules</h3>
+    <ol>
+        <li>Dashboard & Owner Dashboard</li>
+        <li>Dispatcher Module</li>
+        <li>Price Management</li>
+        <li>Geofencing</li>
+        <li>Admin, Driver & User Management</li>
+        <li>Live Trip Requests Management</li>
+        <li>Promotional Management</li>
+        <li>Custom Notifications</li>
+        <li>Cancellation & Complaints</li>
+        <li>Reports</li>
+        <li>FAQ & SOS</li>
+        <li>Bussiness Settings & App Settings & Third Party Settings</li>
+        <li>Admin Chat Options</li>
+        <li>SMS Gateways</li>
+    </ol>
+</section>
+
+<!-- dashboard -->
+<section class="docs-section" id="dashboard">
+    <h3 class="section-title"><span class="text-theme me-2">1.</span>Dashboard & Owner Dashboard</h3>
+    <p>The dashboard serves as a comprehensive control center for managing your entire application. It provides both Admin and Owner users with a detailed overview of essential metrics and performance indicators.</p>
+    <p>Key features include:</p>
+    <ul>
+        <li><strong>User and Driver Management:</strong> Easily monitor the number of registered users and active drivers within the application. This feature helps in assessing user engagement and driver availability.</li>
+        <li><strong>Trip Overview:</strong> Gain insights into current trip statistics, including the number of ongoing rides, completed trips, and canceled rides. This data assists in evaluating the efficiency of operations.</li>
+        <li><strong>Earnings Overview:</strong> View financial summaries for the current year, including total earnings, breakdown of revenues from rides and deliveries, and insights into any discounts or promotions applied. This is vital for financial planning and strategy.</li>
+        <li><strong>Real-time Alerts:</strong> Receive notifications for critical events such as new user registrations, driver applications, and any issues that may arise in the system. This ensures that you remain proactive in managing your operations.</li>
+        <li><strong>Performance Metrics:</strong> Access key performance indicators (KPIs) to assess the overall health of the application, helping you identify areas for improvement and growth opportunities.</li>
+    </ul>
+    
+    <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/admin-dashboard.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/admin-dashboard.png" alt="Admin Dashboard" /></a>
+        </div>
+    </div>
+    
+    <p>Overall, the dashboard empowers both Admins and Owners with the insights needed to effectively manage and optimize their ride-hailing and logistics services.</p>
+</section>
+
+<!-- Dispatcher Module -->
+<section class="docs-section" id="dispatcher-ride-booking">
+    <h3 class="section-title"><span class="text-theme me-2">2.</span>Dispatcher Module</h3>
+    <p>
+        The Dispatcher Module enables admins to manage ride bookings directly through the panel. Dispatchers can select a pickup and drop-off location for the ride and assign a driver manually. This feature allows for more precise control over the ride scheduling and driver assignment, ensuring efficient ride management.
+    </p>
+    <p>Additionally, dispatchers can schedule rides in advance, enabling flexibility for both drivers and riders. This feature supports various use cases, such as planned rides.</p>
+    <p>Please refer to the following image to make Ride via Dispatcher:</p>				
+    <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/dispatcher.png">
+                <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/dispatcher.png" alt="Create Service Location" />
+            </a>
+        </div>
+    </div>							
+</section> <br>
+
+
+
+
+	<!-- Price Management -->
+<section class="docs-section" id="price-management">
+    <h3 class="section-title"><span class="text-theme me-2">3.</span>Price Management</h3>
+    <p>
+        Price Management is the foundational setup for managing the application, allowing you to configure service locations, zones, vehicle types, goods types, subscriptions, and driver incentives. Each of these options is essential for tailoring your service offerings, managing users and drivers, and setting up pricing models across different regions and service types.
+    </p>
+    <p>Each option includes detailed sub-menus with visual guides and explanations, as listed below:</p>
+
+    <ul>
+        <li>
+            <strong>Service Location:</strong> Define and manage service areas where your application will be available. Set unique currencies and time zones for each location. 
+            <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 mb-3">
+                    <a href="assets/images/service-location.png">
+                        <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/service-location.png" alt="Create Service Location" />
+                    </a>
+                </div>
+            </div>
+
+
+        </li>
+
+        <li>
+            <strong>Zone Management:</strong> Create zones within service locations to define specific areas for price variations and restrictions. This feature helps segment areas for more customized pricing.
+            <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 mb-3">
+                    <a href="assets/images/zone.png">
+                        <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/zone.png" alt="Create Zone" />
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <strong>Vehicle Type:</strong> Define different vehicle types for the service, such as cars, bikes, or trucks, and set base prices for each type. 
+            <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 mb-3">
+                    <a href="assets/images/vehicle-type.png">
+                        <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/vehicle-type.png" alt="Create Vehicle Type" />
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <strong>Goods Type:</strong> Define and manage different types of goods that can be transported, with the option to set unique pricing for each type.
+            <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 mb-3">
+                    <a href="assets/images/goods-type.png">
+                        <iframe 
+                            width="100%" 
+                            height="400" 
+                            src="https://www.youtube.com/embed/IHE-GvvYD4M?list=PL9W4itTd3tG_1FJGLNtnD0uHDvV4TCRlu" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <strong>Subscriptions:</strong> Offer subscription packages for users or drivers, allowing them to access exclusive benefits or lower rates.
+            <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 mb-3">
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <strong>Driver Incentives:</strong> Set up incentive programs for drivers based on various factors, such as completed rides or user ratings, encouraging high-quality service.
+            <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 mb-3">
+                    <a href="assets/images/incentive.png">
+                      <iframe 
+                    width="100%" 
+                    height="400" 
+                    src="https://www.youtube.com/embed/US6uqKIyYW8?list=PL9W4itTd3tG_1FJGLNtnD0uHDvV4TCRlu" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>							
+</section> <br>
+
+<!-- Geofencing -->
+<section class="docs-section" id="geofencing-pricing">
+    <h3 class="section-title"><span class="text-theme me-2">4.</span>Geofencing</h3>
+
+    <p>
+        The Geofencing module provides two unique views for monitoring driver availability and ride demand across service areas: "God's Eye" and "Heat Map." These views allow dispatchers and admins to gain real-time insights into driver distribution and areas of high demand, enabling informed pricing adjustments and resource allocation.
+    </p>
+
+    <h4>Geofencing Views</h4>
+    <p>In the Geofencing view, you can choose between the following options:</p>
+
+    <h5>God's Eye</h5>
+    <p>
+        The "God's Eye" view displays the real-time status of drivers within the service area, showing available and busy drivers. Driver markers update in real-time using Geofire, giving dispatchers a comprehensive overview of driver availability at any moment.
+    </p>
+    <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/gods-eye.png">
+                <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/gods-eye.png" alt="God's Eye View" />
+            </a>
+        </div>
+    </div>
+
+    <h5>Heat Map</h5>
+    <p>
+        The "Heat Map" view shows areas with high demand for rides, represented by color intensity. This tool helps identify peak areas and times, allowing admins to adjust pricing dynamically based on demand and improve service coverage.
+    </p>
+    <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/heat-map.png">
+                <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/heat-map.png" alt="Heat Map View" />
+            </a>
+        </div>
+    </div>
+</section> <br>
+
+<!-- Admin, Driver, User & Owner Management -->
+<section class="docs-section" id="admin-user-driver-management">
+    <h3 class="section-title"><span class="text-theme me-2">5.</span>Admin, Driver, User & Owner Management</h3>
+
+    <h4 class="mt-5">Admin Management</h4>
+    <p>
+        In the Admin Management menu, you can create new admin users and assign them to specific service locations. The super admin has the ability to create new super admin users as well. Each admin user can create additional admin users with varying privileges tailored to their roles within the system.
+    </p>
+
+    <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/admin.png">
+                <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/admin.png" alt="Set Privileges" />
+            </a>
+        </div>
+    </div>
+
+    <h4 class="mt-5">User Management</h4>
+    <p>
+        In this menu, you can view the list of registered users who are actively using our application. Admins can edit user information and delete user accounts as necessary.
+    </p>
+    <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/users.png">
+                <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/users.png" alt="Users List" />
+            </a>
+        </div>
+    </div>
+    <h4 class="mt-5">Driver Management</h4>
+    <p>
+        The Driver Management menu displays a comprehensive list of all registered drivers using our application. Admins can edit driver information and delete driver accounts. Additionally, there is a document view option in the drivers list to manage driver documents. Admin users can upload and remove documents for each driver, approve or decline documents, and provide comments during the decline process. These comments will be visible in the mobile approval screen.
+    </p>
+    <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/drivers.png">
+                <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/drivers.png" alt="Drivers List" />
+            </a>
+        </div>
+    </div>
+
+    <h4 class="mt-5">Manage Documents</h4>
+    <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/documents.png">
+                <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/documents.png" alt="Document View" />
+            </a>
+        </div>
+    </div>
+
+    <h4 class="mt-5">Owner Management</h4>
+    <p>
+        The Owner Management section allows you to oversee fleet operations and manage fleet drivers under each owner. This feature is designed to streamline the administration of vehicle fleets and their assigned drivers, ensuring efficient oversight of resources.
+    </p>
+    <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/owners.png">
+                <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/owners.png" alt="Owners List" />
+            </a>
+        </div>
+    </div>
+    <h5>Fleet Management</h5>
+    <p>
+        Under Fleet Management, owners can view and manage their entire fleet of vehicles, including details about each vehicle's status and availability.
+    </p>
+    <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/fleet.png">
+                <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/fleet.png" alt="Fleet List" />
+            </a>
+        </div>
+    </div>
+    <h5>Fleet Drivers</h5>
+    <p>
+        In this submenu, owners can view all drivers associated with their fleet. This section provides insights into driver activities, including approved and declined drivers, along with driver statistics to monitor performance effectively.
+    </p>
+        <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/fleet-driver.png">
+                <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/fleet-driver.png" alt="Fleet Drivers List" />
+            </a>
+        </div>
+    </div>
+</section> <br>
+
+<!-- Trip Request Management -->
+<section class="docs-section" id="trip-request-management">
+    <h3 class="section-title"><span class="text-theme me-2">6.</span>Live Trip Requests Management</h3>
+    <p>Manage all trip requests easily with filters for completed, canceled, and in-progress trips. You can also view live trip data under "On-Going Trip Requests" to track active rides in real time.</p>
+    
+    <p>If a ride is booked in manual mode, you’ll have the option to assign a driver directly from this section. Check out the images below to see how to navigate these features.</p>
+
+    <h4 class="mt-5">Request List</h4>
+    <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/request-list.png">
+                <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/request-list.png" alt="List of trip requests with filters" />
+            </a>
+        </div>
+    </div>
+
+    <h4 class="mt-5">Request Details</h4>
+    <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/request-view-1.png">
+                <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/request-view-1.png" alt="Detailed view of a trip request" />
+            </a>
+        </div>
+    </div>
+        <h4 class="mt-5">Manual Assign Drivers</h4>
+    <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 col-md-12 mb-3">
+            <a href="assets/images/manual-assign.png">
+                <img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/manual-assign.png" alt="Detailed view of a trip request" />
+            </a>
+        </div>
+    </div>
+</section> <br>
+
+
+		<!-- promo Management -->
+							<section class="docs-section" id="promo-management">
+								<h3 class="section-title"><span class="text-theme me-2">7.</span>Promo Management</h3>
+								<p>Here you can configure the promo code with expiry dates. please refer the following image.
+									 Admin users can able to edit or in active the promo code at any time.</p>
+								<p>Note: Maximum discount amount field is an optional. if you set the maximum discount amount then the
+									 promo would be act like an offer upto option. i.e you can configure the promo as 50% discount 
+									 upto 200$ like this.</p>			
+									<div class="simplelightbox-gallery row mb-3">
+										<div class="col-12 col-md-12 mb-3">
+											<a href="assets/images/promo.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/promo.png" alt="" /></a>
+										</div>
+									</div>
+							</section> <br>	
+
+			<!-- custom notification -->
+							<section class="docs-section" id="custom-notifications">
+								<h3 class="section-title"><span class="text-theme me-2">8.</span>Custom Notifications</h3>
+								<p>By using the custom notification option admin users can able to send the custom push notifications
+									 to the users & drivers as well. you can choose a single or multiple users at the same time. 
+									 please refer an image below to send a notifications to the users & drivers.</p>			
+									<div class="simplelightbox-gallery row mb-3">
+										<div class="col-12 col-md-12 mb-3">
+											<a href="assets/images/notification.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/notification.png" alt="" /></a>
+										</div>
+									</div>
+							</section> <br>	
+
+			<!-- cancellation & complaint management -->
+							<section class="docs-section" id="cancellation-complaints">
+								<h3 class="section-title"><span class="text-theme me-2">9.</span>Cancellation & complaints</h3>
+
+								<h4 class="mt-5">Cancellation Management</h4>
+								<p>By using cancellation menu admin user can configure the cancellation reasons for both users & 
+									drivers with arrival state. And also we can configure whether the reason could be compensate or free.
+									 if it is componsate the cancellation fee would be charged for the users & drivers as well.</p>			
+									<div class="simplelightbox-gallery row mb-3">
+										<div class="col-12 col-md-12 mb-3">
+											<a href="assets/images/cancellations.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/cancellations.png" alt="" /></a>
+										</div>
+									</div>
+
+									<h4 class="mt-5">Complaints Management</h4>
+									<p>Here you can see the complaints list that is raised by the users & drivers from the mobile 
+										application. And we can configure the complaints titles at which category they want to rise 
+										thier complaints. Please refer an image below.</p>
+                                    <div class="simplelightbox-gallery row mb-3">
+                                        <div class="col-12 col-md-12 mb-3">
+                                            <a href="assets/images/complaints.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/complaints.png" alt="" /></a>
+                                        </div>
+                                    </div>                                        
+							</section> <br>		
+							
+		<!-- reports -->
+							<section class="docs-section" id="reports">
+								<h3 class="section-title"><span class="text-theme me-2">10.</span>Reports</h3>
+								<p>By using the reports menu admin users can download the travel,drivers & users report along 
+									with multiple filters.There you can see the different filters for each reports. Please refer
+									 an image below.</p>			
+									<div class="simplelightbox-gallery row mb-3">
+										<div class="col-12 col-md-12 mb-3">
+											<a href="assets/images/report.png"><img class="figure-img img-fluid shadow rounded" width="100%" src="assets/images/report.png" alt="" /></a>
+										</div>
+									</div>
+							</section> <br>	
+											
+
+					<div class="d-flex justify-content-between mt-4">
+						<a href="payment-gateway.html" class="btn btn-secondary">&larr; Previous</a>
+						<a href="admin-app-setup.html" class="btn btn-theme">Next &rarr;</a>
+					</div>
+			    </article>
+			</div>
+			<div class="col-lg-3">
+				<div class="docs-toc" id="small-nav">
+					<nav id="toc" class="toc">
+						<nav id="docs-nav" class="docs-nav navbar">
+							<ul class="section-items list-unstyled nav flex-column pb-3">
+								<li class="nav-item section-title mt-3"><a class="nav-link scrollto active" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Admin App</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#docs-intro">1.Introduction</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#dashboard">2.Dashboard</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#dispatcher-management">3.Dispatcher Module</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#geofencing-pricing">4.Geofencing & Pricing</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#admin-user-driver-management">5.Admin, Driver & User Management</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#trip-request-management">6.Trip Request Management</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#promo-management">7.Promo Management</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#custom-notifications">8.Custom Notifications</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#cancellation-complaints">9.Cancellation & complaints</a></li>
+								<li class="nav-item"><a class="nav-link scrollto" href="#reports">10.Reports</a></li>
+							</ul>
+					</nav>
+				</div>
+			</div>
+				
+		<div class="col-lg-9">
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			            <small class="copyright">Misoftwares</small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+                            <li class="list-inline-item">
+                              <a href="https://www.instagram.com/mi_softwares/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram fa-fw"></i>
+                              </a>
+                            </li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+			</div>
+		</div>	
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+
+ <!-- Optional: Custom CSS for dark theme -->
+<style>
+	.hljs {
+	background: #000000;
+	color: #ffffff;
+	}
+</style>
+	 <!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- highlight.js JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script> -->
+    <!-- <script src="assets/js/highlight-custom.js"></script>  -->
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+    <script src="assets/js/other.js"></script> 
+
+</body>
+</html> 
+
