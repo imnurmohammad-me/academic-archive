@@ -6,7 +6,7 @@ This monorepo serves as an archive for early academic assignments, lab coursewor
 
 ---
 
-## 🏛 Contained Projects
+## Contained Projects
 
 ### 1. `cvpr_spring_23_24`
 Computer Vision and Pattern Recognition (CVPR) coursework and laboratory assignments from the Spring 23-24 semester. Includes foundational image processing algorithms and machine learning models.
@@ -22,7 +22,7 @@ An archived historical project template or early-stage system prototype.
 
 ---
 
-## ⚙️ Disclaimer
+## Disclaimer
 The code in this repository is strictly for archival, historical, and academic reference. It is **not maintained**, and may contain outdated dependencies or security vulnerabilities. Do not use this code in production environments.
 
 ---
